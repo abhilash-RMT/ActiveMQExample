@@ -1,4 +1,4 @@
-package com.raremile.training.sender;
+package com.raremile.training.p2p.sender;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;

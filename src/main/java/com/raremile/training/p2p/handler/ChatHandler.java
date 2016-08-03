@@ -1,12 +1,12 @@
-package com.raremile.training.handler;
+package com.raremile.training.p2p.handler;
 
 import javax.jms.JMSException;
 import javax.jms.TextMessage;
 
-import com.raremile.training.receiver.Receiver;
-import com.raremile.training.receiver.ReceiverImpl;
-import com.raremile.training.sender.Sender;
-import com.raremile.training.sender.SenderImpl;
+import com.raremile.training.p2p.receiver.Receiver;
+import com.raremile.training.p2p.receiver.ReceiverImpl;
+import com.raremile.training.p2p.sender.Sender;
+import com.raremile.training.p2p.sender.SenderImpl;
 
 public class ChatHandler {
 
@@ -33,7 +33,7 @@ public class ChatHandler {
 
 			receiver = new ReceiverImpl();
 			textMessage = receiver.receiveMessage();
-			System.out.println("Received: " + textMessage);
+			System.out.println("Received: " + textMessage.getText());
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}

@@ -1,6 +1,6 @@
-package com.raremile.training.App;
+package com.raremile.training.p2p.App;
 
-import com.raremile.training.handler.ChatHandler;
+import com.raremile.training.p2p.handler.ChatHandler;
 
 public class App {
 
